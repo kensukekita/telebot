@@ -8,8 +8,8 @@ $chatid=$_POST['id'];
 $text=$_POST['msg'];
 
 $response = $telegram->sendMessage([
-  'chat_id' => ''.$chatid.'', 
-  'text' => ''.$text.''
+  'chat_id' => '$chatid', 
+  'text' => '$text'
 ]);
 
 $messageId = $response->getMessageId();
